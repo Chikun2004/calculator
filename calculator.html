@@ -1,0 +1,47 @@
+ <!DOCTYPE html>  
+    <html>  
+    <head>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+    <script>  
+    $(document).ready(function(){  
+        $("#a").click(function(){  
+           var b1= $("#b").val();
+           var c1= $("#c").val();
+           var a1=parseInt(b1)+parseInt(c1);
+            $("#d").text(a1);
+        }); 
+        $("#a1").click(function(){  
+           var b1= $("#b").val();
+           var c1= $("#c").val();
+           var a1=parseInt(b1)-parseInt(c1);
+            $("#d").text(a1);
+        });  
+        $("#a2").click(function(){  
+           var b1= $("#b").val();
+           var c1= $("#c").val();
+           var a1=parseInt(b1)/parseInt(c1);
+            $("#d").text(a1);
+        }); 
+        $("#a3").click(function(){  
+           var b1= $("#b").val();
+           var c1= $("#c").val();
+           var a1=parseInt(b1)*parseInt(c1);
+            $("#d").text(a1);
+        });
+    });  
+    </script>  
+    <style>  
+    </style>  
+    </head>  
+    <body>  
+    <input type="text" id="b"></input>
+    <button id="a">+</button>
+    <button id="a1">-</button>
+     <button id="a2">/</button>
+     <button id="a3">*</button>
+    <input type="text" id="c"></input>
+   
+       =<label id="d"></label>
+     </body>  
+   
+    </html>  
